@@ -1,0 +1,26 @@
+@import './variables';
+
+.footer {
+  position: relative;
+  top: 85vh;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-secondary-dark;
+  color: $color-brand;
+  &__social {
+    margin-top: 2em;
+    &-icons {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 1em;
+      height: 23px;
+    }
+  }
+}
+.footer__social-icons img {
+  height: 100%;
+  cursor: pointer;
+}

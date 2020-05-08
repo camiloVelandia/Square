@@ -1,0 +1,56 @@
+$color_brand: #ffffff;
+$color_secondary: #105569;
+$color_secondary-dark: #0b3946;
+
+$color-grey: #a0a0a0;
+$color-lightgrey: #d6d6d6;
+
+$h1fontsize: 40px;
+$h2fontsize: 20px;
+$h3fontsize: 13px;
+$p1fontsize: 25px;
+$p2fontsize: 20px;
+
+$h1movilfontsize: 25px;
+$h2movilfontsize: 8px;
+$h3movilfontsize: 10px;
+$p1movilfontsize: 10px;
+
+$hfont: 'Montserrat', sans-serif;
+$pfont: 'Open Sans', sans-serif;
+
+$buttoncolor: $color_brand;
+$buttonbackgroundcolor: $color_secondary;
+
+// button
+
+.btn {
+  display: inline-block;
+  color: $buttoncolor;
+  background-color: $buttonbackgroundcolor;
+  line-height: 2.5;
+  height: 4em;
+  width: 10em;
+  border: 2px solid $color_brand;
+  font-family: $hfont;
+  font-weight: bold;
+  letter-spacing: 3.8px;
+  &:hover {
+    background-color: $buttoncolor;
+    color: $buttonbackgroundcolor;
+    cursor: pointer;
+  }
+}
+.btn-register {
+  display: inline-block;
+  color: $buttoncolor;
+  background-color: $buttonbackgroundcolor;
+  line-height: 3;
+  height: 3em;
+  width: 15em;
+  font-family: $hfont;
+  font-weight: bold;
+  letter-spacing: 3.8px;
+  text-align: center;
+  text-decoration: none;
+}

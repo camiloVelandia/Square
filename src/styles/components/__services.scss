@@ -1,0 +1,50 @@
+@import './variables';
+
+.services {
+  position: relative;
+  top: 85vh;
+  height: 40vh;
+  display: flex;
+  border: 1px solid red;
+
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 5% 10%;
+  &__article {
+    margin: 0 1%;
+  }
+  &__article-figure img {
+    height: 74px;
+  }
+  &__article-info {
+    padding-top: 1em;
+    & h2 {
+      color: $color_secondary;
+      font-size: $h2fontsize;
+    }
+    & p {
+      font-size: $p2fontsize;
+      color: $color-grey;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .services {
+    width: 100%;
+    height: 20vh;
+    padding: 0;
+    &__article-figure img {
+      height: 45px;
+    }
+    &__article-info {
+      & h2 {
+        font-size: $h2movilfontsize;
+      }
+      & p {
+        display: none;
+      }
+    }
+  }
+}

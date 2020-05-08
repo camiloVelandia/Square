@@ -1,0 +1,39 @@
+@import './variables';
+
+.header {
+  position: relative;
+  z-index: 2;
+  height: 15vh;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+  &__logo {
+    padding-left: 7%;
+  }
+  &__nav ul {
+    display: flex;
+    justify-content: center;
+    margin-right: 30%;
+  }
+  &__nav ul li {
+    list-style: none;
+    padding-right: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: $color_brand;
+    cursor: pointer;
+  }
+}
+.icon {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .header__nav ul {
+    display: none;
+  }
+  .icon {
+    cursor: pointer;
+    display: block;
+  }
+}

@@ -1,0 +1,43 @@
+@import './variables';
+
+.hero {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 90%;
+  background: gray;
+  background-image: url('../../assets/images/hero.png');
+  background-position: center;
+  background-size: contain;
+  display: grid;
+  grid-template-rows: 4fr 2fr 1fr;
+  padding-left: 10%;
+  &__title {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    font-size: 4rem;
+    color: $color_brand;
+  }
+  &__scroll {
+    padding-left: 40%;
+    margin: auto 0;
+    color: $color_brand;
+  }
+}
+.video-background {
+    display: none;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+@media screen and (min-width: 1000px){
+
+  .hxILIZ .video-background {
+      display: block;
+  }
+}
+
+

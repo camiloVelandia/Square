@@ -1,11 +1,25 @@
-import React from "react";
+import React from 'react';
+import '../styles/styles.scss';
+
+import Header from '../components/Header';
+import Main from '../components/Main';
+import Services from '../components/Services';
+import Reserve from '../components/Reserve';
+import Slides from '../components/Slides';
+import Form from '../components/Form';
+import Footer from '../components/Footer';
 
 const App = () => {
   return (
-    <div>
-      <h1>My template</h1>
-      <p>By: Camilo Velandia || @xander_coder</p>
-    </div>
+    <>
+      <Header />
+      <Main />
+      <Services />
+      <Reserve />
+      <Slides />
+      <Form />
+      <Footer />
+    </>
   );
 };
 

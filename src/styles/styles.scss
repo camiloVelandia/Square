@@ -1,0 +1,35 @@
+@import "./components/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $color-brand;
+}
+
+h1 {
+    font-family: $hfont;
+    font-weight: bold;
+    font-size: $h1fontsize;
+
+}
+h2 {
+    font-family: $hfont;
+    font-weight: bold;
+    font-size: $h2fontsize;
+
+}
+h3 {
+    font-family: $hfont;
+    font-weight: 400;
+    font-size: $h3fontsize;
+
+}
+p {
+    font-family: $pfont;
+    font-weight: light;
+    font-size: $p1fontsize;
+
+}
