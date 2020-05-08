@@ -8,7 +8,7 @@
   grid-template-columns: 4fr 1fr;
   align-items: center;
   &__logo {
-    padding-left: 7%;
+    padding-left: 0%;
   }
   &__nav ul {
     display: flex;
@@ -29,6 +29,12 @@
 }
 
 @media (max-width: 800px) {
+  .header {
+    &__logo {
+      width: 10px;
+    }
+  }
+
   .header__nav ul {
     display: none;
   }

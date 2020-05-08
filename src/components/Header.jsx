@@ -1,14 +1,17 @@
 import React from 'react';
 import '../styles/components/__header.scss';
+
 import { FiMenu } from 'react-icons/fi';
+
 import { IconContext } from 'react-icons';
+import Logo from './logo';
 import Menu from './menu';
 
 const Header = () => {
   return (
     <header className="header">
       <figure className="header__logo">
-        <p>square</p>
+        <Logo />
       </figure>
       <nav className="header__nav">
         <ul>

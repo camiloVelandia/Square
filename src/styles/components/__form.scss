@@ -4,7 +4,7 @@
   position: relative;
   top: 85vh;
   border: 1px solid red;
-  height: 130vh;
+  height: 140vh;
   background-color: $color_secondary;
   padding: 10% 20%;
   color: $color_brand;
@@ -25,8 +25,10 @@
 }
 .form__input {
   padding: 0;
+  padding-left: 5px;
   margin: 0;
   height: 50px;
+  color: $color_secondary-dark;
 }
 .input-name {
   width: 100%;
@@ -48,12 +50,14 @@
 .form__select {
   width: 100%;
   height: 50px;
-  color: $color-grey;
+  color: $color_secondary-dark;
 }
 .form__textArea {
   width: 100%;
   height: 22%;
   margin-bottom: 6%;
+  color: $color_secondary-dark;
+  padding: 5px 5px;
 }
 .form__radio {
   width: 50%;
@@ -70,20 +74,18 @@
   }
 }
 
-
-@media (max-width: 800px){
-  .form{
+@media (max-width: 900px) {
+  .form {
     height: 120vh;
-    &__info h1{
+    &__info h1 {
       font-size: $h1movilfontsize;
     }
-    &__info p{
-  font-size: $p1movilfontsize;
+    &__info p {
+      font-size: $p1movilfontsize;
     }
-    & button{
+    & button {
       margin-left: 25%;
       text-align: center;
     }
   }
-  
 }
