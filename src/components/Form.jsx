@@ -35,12 +35,14 @@ const Form = () => {
       <label className="form__label" htmlFor="select">
         SELECT OPTION
       </label>
-      <select name="select" className="form__select">
-        <option>Option 1</option>
-        <option>Option 2</option>
-        <option>Option 3</option>
-        <option>Option 4</option>
-      </select>
+      <div className="caja">
+        <select name="select" className="form__select">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <option>Option 4</option>
+        </select>
+      </div>
       <label className="form__label" htmlFor="check">
         EROS IN CURSUS TUPIS
       </label>

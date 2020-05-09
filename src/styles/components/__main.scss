@@ -6,9 +6,10 @@
   height: 100vh;
   width: 90%;
   background: gray;
-  background-image: url('../../assets/images/hero.png');
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.9);
+  filter: brightness(0.9);
   display: grid;
   grid-template-rows: 4fr 2fr 1fr;
   padding-left: 10%;

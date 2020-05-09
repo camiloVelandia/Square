@@ -1,10 +1,10 @@
 import React from 'react';
-
+import hero from '../assets/images/hero.png';
 import '../styles/components/__main.scss';
 
 const Main = () => {
   return (
-    <main className="hero">
+    <main className="hero" style={{ backgroundImage: `url(${hero})` }}>
       <h1 className="hero__title">
         Lorem ipsum
         <br />
