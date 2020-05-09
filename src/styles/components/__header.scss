@@ -10,12 +10,12 @@
   &__logo {
     padding-left: 0%;
   }
-  &__nav ul {
+  & nav menu {
     display: flex;
     justify-content: center;
     margin-right: 30%;
   }
-  &__nav ul li {
+  &__nav menu li {
     list-style: none;
     padding-right: 1em;
     font-family: 'Montserrat', sans-serif;
@@ -29,17 +29,56 @@
 }
 
 @media (max-width: 800px) {
+  .show {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
   .header {
     &__logo {
       width: 10px;
     }
   }
 
-  .header__nav ul {
-    display: none;
-  }
   .icon {
     cursor: pointer;
     display: block;
+  }
+}
+
+header .burger {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .header_nav menu {
+    flex-direction: column;
+    position: fixed;
+    list-style: none;
+    background-color: $color_brand;
+    left: 0vw;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    top: 70px;
+    color: black;
+  }
+  header .burger {
+    display: block;
+  }
+  menu li:hover {
+    & a {
+      color: #ffffff;
+    }
+    background-color: $color_secondary;
+    color: #ffffff;
   }
 }

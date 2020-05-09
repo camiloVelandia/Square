@@ -1,7 +1,7 @@
 import React from 'react';
-
+import Modal from './Modal';
 import '../styles/components/__reserve.scss';
-
+import SimpleReactLightbox from 'simple-react-lightbox';
 import Photo from '../assets/images/reserve.png';
 
 const Reserve = () => {
@@ -25,6 +25,9 @@ const Reserve = () => {
         <button className="reserve__button btn" type="button">
           RESERVE
         </button>
+        <SimpleReactLightbox>
+          <Modal />
+        </SimpleReactLightbox>
       </article>
     </section>
   );
