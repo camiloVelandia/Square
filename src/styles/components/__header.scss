@@ -10,12 +10,18 @@
   &__logo {
     padding-left: 0%;
   }
-  & nav menu {
+  &__nav-list {
     display: flex;
     justify-content: center;
     margin-right: 30%;
+    & ul {
+      display: flex;
+    }
+    & ul h2 {
+      display: none;
+    }
   }
-  &__nav menu li {
+  &__nav-list ul li {
     list-style: none;
     padding-right: 1em;
     font-family: 'Montserrat', sans-serif;
@@ -28,11 +34,30 @@
   display: none;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .show {
-    display: block;
+    display: flex;
+    & ul {
+      display: block;
+      background-color: $color_brand;
+      height: 30%;
+      width: 30%;
+      position: fixed;
+      top: 10%;
+      right: 0;
+      & h2 {
+        display: block;
+        padding-top: 8px;
+        padding-left: 10px;
+        color: $color_secondary;
+      }
+      & li {
+        margin-top: 2em;
+        color: $color_secondary;
+        text-align: center;
+      }
+    }
   }
-
   .hide {
     display: none;
   }
@@ -41,43 +66,12 @@
       width: 10px;
     }
   }
-
-  .icon {
+  .header .icon {
+    display: block;
     cursor: pointer;
-    display: block;
   }
-}
 
-header .burger {
-  display: none;
-}
-
-@media screen and (max-width: 850px) {
-  .show {
-    display: block;
-  }
-  .hide {
-    display: none;
-  }
-  .header_nav menu {
-    flex-direction: column;
-    position: fixed;
-    list-style: none;
-    background-color: $color_brand;
-    left: 0vw;
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-    top: 70px;
-    color: black;
-  }
-  header .burger {
-    display: block;
-  }
-  menu li:hover {
-    & a {
-      color: #ffffff;
-    }
+  .header_nav-list:hover {
     background-color: $color_secondary;
     color: #ffffff;
   }

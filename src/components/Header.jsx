@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/components/__header.scss';
 
+import { IconContext } from 'react-icons';
 import { FiMenu } from 'react-icons/fi';
 
-import { IconContext } from 'react-icons';
 import Logo from './logo';
 
 const Header = () => {
@@ -22,27 +22,20 @@ const Header = () => {
         <Logo />
       </figure>
       <nav className="header__nav">
-        <menu className={showClass}>
-          <li>ABOUT</li>
-          <li>CONTACT</li>
+        <menu className={`${showClass} header__nav-list`}>
+          <ul>
+            <h2>Menu</h2>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+          </ul>
         </menu>
         <IconContext.Provider
           className="burger"
-          onClick={showMenu}
-          onKeyDown={showMenu}
           value={{ color: 'white', size: '2em', className: 'icon' }}
         >
           <FiMenu onClick={showMenu} onKeyDown={showMenu} />
         </IconContext.Provider>
       </nav>
-      {/* <button
-        type="button"
-        className="burger"
-        onClick={showMenu}
-        onKeyDown={showMenu}
-      >
-        &#9776;
-      </button> */}
     </header>
   );
 };
