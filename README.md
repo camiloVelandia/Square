@@ -1,4 +1,4 @@
-# React.js Template
+# Square
 
 this is a template for projects in React.js, I use
 webpack, babel and stylus for this template
