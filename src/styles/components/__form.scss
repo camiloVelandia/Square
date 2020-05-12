@@ -3,7 +3,7 @@
 .form {
   position: relative;
   top: 85vh;
-  height: 140vh;
+  height: 125vh;
   background-color: $color_secondary;
   padding: 10% 20%;
   color: $color_brand;
@@ -95,7 +95,8 @@
 
 @media (max-width: 900px) {
   .form {
-    height: 120vh;
+    height: 110vh;
+    padding: 20% 20% 0%;
     &__info h1 {
       font-size: $h1movilfontsize;
     }
@@ -104,6 +105,7 @@
     }
     & button {
       margin-left: 25%;
+      margin-top: 20%;
       text-align: center;
     }
   }
