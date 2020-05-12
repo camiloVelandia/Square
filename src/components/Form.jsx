@@ -14,51 +14,51 @@ const Form = () => {
       </div>
       <label className="form__label" htmlFor="name">
         NAME
+        <input
+          type="text"
+          className="form__input input-name"
+          name="name"
+          required
+        />
       </label>
-      <input
-        type="text"
-        className="form__input input-name"
-        name="name"
-        required
-      />
 
       <div className="form__container">
         <div className="form__container-e">
           <label className="form__label" htmlFor="email">
             EMAIL
+            <input
+              className="form__input input-23"
+              type="email"
+              name="email"
+              required
+            />
           </label>
-          <input
-            className="form__input input-23"
-            type="email"
-            name="email"
-            required
-          />
         </div>
         <div className="form__container-p">
           <label className="form__label" htmlFor="phone">
             PHONE
+            <input
+              type="number"
+              className="form__input input-23"
+              name="phone"
+              required
+            />
           </label>
-          <input
-            type="number"
-            className="form__input input-23"
-            name="phone"
-            required
-          />
         </div>
       </div>
 
       <label className="form__label" htmlFor="select">
         SELECT OPTION
+        <div className="caja">
+          <select name="select" className="form__select" required>
+            <option value="">seleccione una opcion</option>
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+            <option value="Option 4">Option 4</option>
+          </select>
+        </div>
       </label>
-      <div className="caja">
-        <select name="select" className="form__select" required>
-          <option value="">seleccione una opcion</option>
-          <option value="Option 1">Option 1</option>
-          <option value="Option 2">Option 2</option>
-          <option value="Option 3">Option 3</option>
-          <option value="Option 4">Option 4</option>
-        </select>
-      </div>
       <label className="form__label" htmlFor="check" required>
         EROS IN CURSUS TUPIS
       </label>
@@ -90,14 +90,14 @@ const Form = () => {
       </div>
       <label className="form__label" htmlFor="area">
         LEAVE US A MESSAGE
+        <textarea
+          className="form__textArea"
+          placeholder="Comentario*"
+          name="area"
+          rows="8"
+          required
+        />
       </label>
-      <textarea
-        className="form__textArea"
-        placeholder="Comentario*"
-        name="area"
-        rows="8"
-        required
-      />
 
       <button type="submit" className="btn">
         {' '}

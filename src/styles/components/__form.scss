@@ -16,7 +16,6 @@
   }
   &__label {
     display: block;
-    padding-top: 2%;
     padding-bottom: 2%;
     font-family: 'Montserrat', sans-serif;
     font-size: $h3fontsize;
@@ -24,8 +23,8 @@
 }
 .form__input {
   padding: 0;
+  margin-top: 2%;
   padding-left: 5px;
-  margin: 0;
   height: 50px;
   color: $color_secondary-dark;
 }
@@ -47,7 +46,7 @@
   width: 100%;
 }
 .caja {
-  margin: 20px auto;
+  margin: 2% auto 0;
   height: 51px;
   width: 100%;
   overflow: hidden;
@@ -74,6 +73,7 @@
 .form__textArea {
   width: 100%;
   height: 22%;
+  margin-top: 2%;
   margin-bottom: 6%;
   color: $color_secondary-dark;
   padding: 5px 5px;
